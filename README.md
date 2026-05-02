@@ -93,19 +93,19 @@ Baue eine Vorrichtung für die PCB, die du herstellen möchtest: Verwende eine f
 
 Richte dein Stencil aus und fixiere es auf einer Seite mit Klebeband.
 
-![align stencil](resources/align stencil.jpg)
+![align stencil](resources/align%20stencil.jpg)
 
 #### 3. Lötpaste auftragen
 
 Gib etwas Lötpaste auf dein Stencil und verteile sie gleichmäßig über alle Öffnungen, entferne überschüssige Paste.
 
-![apply paste](resources/apply paste 2.jpg)
+![apply paste](resources/apply%20paste%202.jpg)
 
 #### 4. Stencil entfernen und Bauteile platzieren
 
 Platziere deine Bauteile auf der frischen Lötpaste. *Hinweis:* Einige Bauteile haben eine eindeutige Ausrichtung, bitte platziere sie entsprechend.
 
-![place components](resources/place components 2.jpg)
+![place components](resources/place%20components%202.jpg)
 
 #### 5. Reflow-Gerät erhitzen und PCB löten
 
