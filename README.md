@@ -1,30 +1,30 @@
-# Instructions for WS2812 Arrays
+# Anweisungen für WS2812-Arrays
 
-## Ordering from JLCPCB
+## Bestellung bei JLCPCB
 
-Visit [JLCPCB.com](https://jlcpcb.com/) or a manufacturer of your choice (Instructions should work almost identically).
+Besuche [JLCPCB.com](https://jlcpcb.com/) oder einen Hersteller deiner Wahl (die Anweisungen sollten nahezu identisch funktionieren).
 
-Navigate to **Products** → **FR4-PCBs** → **Get Instant Quote**
+Navigiere zu **Products** → **FR4-PCBs** → **Get Instant Quote**
 
-Upload the needed Gerber-Files as .zip and wait until the upload is completed, now you should see a preview of the uploaded PCBs
+Lade die benötigten Gerber-Dateien als .zip hoch und warte, bis der Upload abgeschlossen ist. Nun solltest du eine Vorschau der hochgeladenen PCBs sehen.
 
-### Settings
+### Einstellungen
 
-The first few settings should be set automatically, check these because errors can occur:
+Die ersten Einstellungen sollten automatisch gesetzt werden, überprüfe diese, da Fehler auftreten können:
 - **Base Material:** FR-4
 - **Layers:** 2
-- **Dimensions:** (should be the numbers of leds per side*10mm e.g. 2 × 2 -→ 20mm × 20mm)
-- **PCB Qty:** Enter your needed quantity (*Note:* the more PCBs you order the cheaper they get per Unit)
+- **Dimensions:** (sollten die Anzahl der LEDs pro Seite*10mm sein, z. B. 2 × 2 -→ 20mm × 20mm)
+- **PCB Qty:** Gib die benötigte Menge ein (*Hinweis:* Je mehr PCBs du bestellst, desto günstiger werden sie pro Einheit)
 - **Product Type:** Industrial/Consumer electronics
 
 #### PCB Specifications
 
 - **Different Design:** 1
 - **Delivery Format:** Single PCB
-- **PCB Thickness:** 1.6mm is preferred to ensure optimal heat dissipation but thinner PCBs can be chosen if you need
-- **PCB Color:** White for best optical properties
-- **Silkscreen:** (gets chosen automatically)
-- **Surface Finish:** HASL(with lead) or LeadFree HASL (LeadFree is recommended for less toxins)
+- **PCB Thickness:** 1.6mm wird bevorzugt, um eine optimale Wärmeableitung sicherzustellen, aber dünnere PCBs können gewählt werden, falls nötig
+- **PCB Color:** Weiß für beste optische Eigenschaften
+- **Silkscreen:** (wird automatisch gewählt)
+- **Surface Finish:** HASL(with lead) oder LeadFree HASL (LeadFree wird wegen geringerer Toxizität empfohlen)
 
 #### High-spec Options
 
@@ -44,90 +44,89 @@ The first few settings should be set automatically, check these because errors c
 
 #### Stencil
 
-As there are a lot of components on one PCB a Stencil is recommended, just check **Stencil** at the bottom
+Da sich viele Bauteile auf einer PCB befinden, wird ein Stencil empfohlen. Aktiviere einfach **Stencil** unten.
 - **Framework:** No
 - **Step Stencil:** No
 - **Nano-Coating:** No
 - **Stencil Side:** Top only
-- **Dimensions:** Check custom size and give your PCB a border of 10 or 20mm (*Note:* Stencils up to 100mm × 100mm cost the same, keep that in mind when ordering)
+- **Dimensions:** Wähle custom size und gib deiner PCB einen Rand von 10 oder 20mm (*Hinweis:* Stencils bis 100mm × 100mm kosten gleich viel, behalte das bei der Bestellung im Hinterkopf)
 - **Stencil Qty:** 1
 - **Thickness:** Select by JLCPCB
 - **Stencil Process Type:** Solder Paste stencil
 - **Polishing Process:** Sanding
 - **Fiducials:** No Fiducial
-- **Confirm Production file:** Yes (to ensure no errors occurred)
+- **Confirm Production file:** Yes (um sicherzustellen, dass keine Fehler aufgetreten sind)
 - **Engrave Text:** No
 - **Package Box:** With JLCPCB logo
 
-**Done!**
-Save the order to your cart and add more PCBs if you like.
+**Fertig!**  
+Speichere die Bestellung in deinem Warenkorb und füge weitere PCBs hinzu, wenn du möchtest.
 
-*Note:* The Shipping Estimate is not really accurate, depending on weight and delivery time the shipping cost varies a lot.
+*Hinweis:* Die Versandkostenschätzung ist nicht wirklich genau. Je nach Gewicht und Lieferzeit variieren die Versandkosten stark.
 
-When added all PCBs just use the checkout like in any other onlineshop.
+Wenn alle PCBs hinzugefügt wurden, nutze einfach den Checkout wie in jedem anderen Onlineshop.
 
-*Note:* Try different shipping methods and keep in mind that tax and toll might be handled separately with some methods. I recommend *Global Standard Direct Line* or *EuroPacket* for delivery to the EU.
+*Hinweis:* Probiere verschiedene Versandmethoden aus und beachte, dass Steuern und Zoll bei einigen Methoden separat abgewickelt werden können. Ich empfehle *Global Standard Direct Line* oder *EuroPacket* für Lieferungen in die EU.
 
 ## Assembly
 
-### Needed Equipment and components
+### Benötigte Ausrüstung und Bauteile
 
-- **hot plate or reflow oven** *Note:* An old airfryer also works, just don't use it for food afterwards!
-- **solder paste**
-- **plastic squeegee or old credit card**
-- **fine tweezers**
-- **nitrile or latex gloves**
-- **tape**
+- **Heizplatte oder Reflow-Ofen** *Hinweis:* Eine alte Heißluftfritteuse funktioniert ebenfalls, benutze sie danach aber nicht mehr für Lebensmittel!
+- **Lötpaste**
+- **Kunststoffrakel oder alte Kreditkarte**
+- **feine Pinzette**
+- **Nitril- oder Latexhandschuhe**
+- **Klebeband**
 - **X × Y WS2812 LEDs**
-- **X × Y 100µF Capacitors** (These are only needed if mentioned in your LEDs Datasheet. If you are not sure, add them as they are beneficial for better data transmission)
+- **X × Y 100µF Kondensatoren** (Diese werden nur benötigt, wenn sie im Datenblatt deiner LEDs erwähnt werden. Falls du dir unsicher bist, füge sie hinzu, da sie für eine bessere Datenübertragung vorteilhaft sind)
 
-### Soldering
+### Löten
 
-#### 1. Build a jig
+#### 1. Eine Vorrichtung bauen
 
-Build a jig for the PCB you want to build: Use a flat surface, place your PCB and arrange other PCBs around. fix them in place with tape.
+Baue eine Vorrichtung für die PCB, die du herstellen möchtest: Verwende eine flache Oberfläche, platziere deine PCB und ordne weitere PCBs darum herum an. Fixiere sie mit Klebeband.
 
-![PCB jig](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/PCB%20jig.jpg)
+![PCB jig](resources/PCB%20jig.jpg)
 
-#### 2. Align stencil
+#### 2. Stencil ausrichten
 
-Align your Stencil and fix it on one side with tape
+Richte dein Stencil aus und fixiere es auf einer Seite mit Klebeband.
 
 ![align stencil](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/align%20stencil.jpg)
 
-#### 3. Apply solder paste
+#### 3. Lötpaste auftragen
 
-Put some solder paste on your stencil and spread it evenly over all holes, remove excess paste.
+Gib etwas Lötpaste auf dein Stencil und verteile sie gleichmäßig über alle Öffnungen, entferne überschüssige Paste.
 
 ![apply paste](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/apply%20paste%202.jpg)
 
-#### 4. Remove Stencil and place components
+#### 4. Stencil entfernen und Bauteile platzieren
 
-Place your components onto the fresh solder paste. *Note:* Some Components have a distinct orientation, please place accordingly
+Platziere deine Bauteile auf der frischen Lötpaste. *Hinweis:* Einige Bauteile haben eine eindeutige Ausrichtung, bitte platziere sie entsprechend.
+
 ![place components](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/place%20components%202.jpg)
 
-#### 5. Heat your reflow device and solder your PCB
+#### 5. Reflow-Gerät erhitzen und PCB löten
 
-Set the correct temperature and place your PCB in/on your reflow device. *Note:* When soldering is finished the PCBs are be hot, please be cautious or burns/injuries may occur!
+Stelle die richtige Temperatur ein und platziere deine PCB in/auf dein Reflow-Gerät. *Hinweis:* Wenn der Lötvorgang abgeschlossen ist, sind die PCBs heiß. Bitte sei vorsichtig, da sonst Verbrennungen/Verletzungen auftreten können!
 
 ![reflow](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/reflow-1.gif)
 
-#### 6. Wire and test
+#### 6. Verdrahten und testen
 
-Finally vou can wire your finished PCBs. Use them as you like, but don't exceed the ratings of the PCBs/components!
+Zum Schluss kannst du deine fertigen PCBs verdrahten. Verwende sie, wie du möchtest, aber überschreite nicht die Grenzwerte der PCBs/Bauteile!
 
-## Basic examples
+## Einfache Beispiele
 
-If you need some inspiration or a basic script to start with have a look at [scripts](https://github.com/kkitdesign/ws2812-array/tree/main/scripts)!
+Falls du etwas Inspiration oder ein einfaches Startskript brauchst, wirf einen Blick auf [scripts](https://github.com/kkitdesign/ws2812-array/tree/main/scripts)!
 
 ![example random](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/random.gif)
 
-## Mounting and integration
+## Montage und Integration
 
-The arrays can be combined with fitting diffusers using M3-screws, just make sure they are not too long and damage the front plane. If needed the diffusers can be used to combine multiple arrays, just attach them side by side in your CAD-Software or slicer.
+Die Arrays können mit passenden Diffusoren mithilfe von M3-Schrauben kombiniert werden. Achte nur darauf, dass sie nicht zu lang sind und die Frontplatte beschädigen. Falls nötig, können die Diffusoren verwendet werden, um mehrere Arrays zu kombinieren. Platziere sie dazu einfach nebeneinander in deiner CAD-Software oder im Slicer.
 
-To mount the arrays there are 3mm holes exactly 10mm from the outer edges, the 8×8 and 10×10 also have one mounting hole in the center to prevent the diffuser from bending away. All holes can be used to mount the diffusers to your project, but don't overtighten them and use a nylon washer to prevent scratching the soldermask. In combination with the metal screw shortages could occur.
+Zur Montage der Arrays gibt es 3mm-Löcher genau 10mm von den Außenkanten entfernt. Die 8×8- und 10×10-Varianten haben zusätzlich ein Befestigungsloch in der Mitte, damit sich der Diffusor nicht nach außen biegt. Alle Löcher können verwendet werden, um die Diffusoren an deinem Projekt zu befestigen, aber ziehe sie nicht zu fest an und verwende eine Nylon-Unterlegscheibe, um Kratzer auf der Lötstoppmaske zu vermeiden. In Kombination mit Metallschrauben können Kurzschlüsse auftreten.
 
-For mechanical drawings visit [mechanical](https://github.com/kkitdesign/ws2812-array/tree/main/mechanical).
-
-
+Für mechanische Zeichnungen besuche [mechanical](https://github.com/kkitdesign/ws2812-array_de/tree/main/mechanical).
