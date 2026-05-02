@@ -44,7 +44,7 @@ Die ersten Einstellungen sollten automatisch gesetzt werden, überprüfe diese, 
 
 #### Stencil
 
-Da sich viele Bauteile auf einer PCB befinden, wird ein Stencil empfohlen. Aktiviere einfach **Stencil** unten.
+Da sich viele Bauteile auf einem PCB befinden, wird ein Stencil empfohlen. Aktiviere einfach **Stencil** unten.
 - **Framework:** No
 - **Step Stencil:** No
 - **Nano-Coating:** No
@@ -93,25 +93,25 @@ Baue eine Vorrichtung für die PCB, die du herstellen möchtest: Verwende eine f
 
 Richte dein Stencil aus und fixiere es auf einer Seite mit Klebeband.
 
-![align stencil](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/align%20stencil.jpg)
+![align stencil](resources/align stencil.jpg)
 
 #### 3. Lötpaste auftragen
 
 Gib etwas Lötpaste auf dein Stencil und verteile sie gleichmäßig über alle Öffnungen, entferne überschüssige Paste.
 
-![apply paste](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/apply%20paste%202.jpg)
+![apply paste](resources/apply paste 2.jpg)
 
 #### 4. Stencil entfernen und Bauteile platzieren
 
 Platziere deine Bauteile auf der frischen Lötpaste. *Hinweis:* Einige Bauteile haben eine eindeutige Ausrichtung, bitte platziere sie entsprechend.
 
-![place components](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/place%20components%202.jpg)
+![place components](resources/place components 2.jpg)
 
 #### 5. Reflow-Gerät erhitzen und PCB löten
 
 Stelle die richtige Temperatur ein und platziere deine PCB in/auf dein Reflow-Gerät. *Hinweis:* Wenn der Lötvorgang abgeschlossen ist, sind die PCBs heiß. Bitte sei vorsichtig, da sonst Verbrennungen/Verletzungen auftreten können!
 
-![reflow](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/reflow-1.gif)
+![reflow](resources/reflow-1.gif)
 
 #### 6. Verdrahten und testen
 
@@ -119,9 +119,9 @@ Zum Schluss kannst du deine fertigen PCBs verdrahten. Verwende sie, wie du möch
 
 ## Einfache Beispiele
 
-Falls du etwas Inspiration oder ein einfaches Startskript brauchst, wirf einen Blick auf [scripts](https://github.com/kkitdesign/ws2812-array/tree/main/scripts)!
+Falls du etwas Inspiration oder ein einfaches Startskript brauchst, wirf einen Blick auf [scripts](https://github.com/kkitdesign/ws2812-array_de/tree/main/scripts)!
 
-![example random](https://github.com/kkitdesign/ws2812-array/blob/40529c479d8c9b486bf6357b3c7a2d97c2f17529/resources/random.gif)
+![example random](resources/random.gif)
 
 ## Montage und Integration
 
